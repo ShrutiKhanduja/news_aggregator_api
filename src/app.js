@@ -16,7 +16,7 @@ process.on('unhandledRejection', error => {
 
 //Connect to database
   try {
-    mongoose.connect("mongodb+srv://ShrutiKhanduja:2LaAP1JuvbUFOWdO@cluster0.ivus423.mongodb.net/", {
+    mongoose.connect(CONNECTION_KEY, {
       useUnifiedTopology: true,
       useNewUrlParser: true
     });
